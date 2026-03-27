@@ -1,0 +1,26 @@
+{
+  "name": "just-node",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "packageManager": "pnpm@10.28.2",
+  "scripts": {
+    "dev": "turbo run dev --filter=@just-node/example",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "preview": "pnpm --filter @just-node/example preview",
+    "test:e2e": "playwright test"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.4",
+    "@playwright/test": "^1.58.2",
+    "@types/node": "^24.12.0",
+    "eslint": "^9.39.4",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.5.2",
+    "globals": "^17.4.0",
+    "turbo": "^2.5.8",
+    "typescript": "~5.9.3",
+    "typescript-eslint": "^8.57.0"
+  }
+}

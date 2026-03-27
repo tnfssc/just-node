@@ -1,0 +1,26 @@
+{
+  "name": "@just-node/core",
+  "version": "0.0.0",
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./src/index.ts"
+    }
+  },
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "lint": "eslint src"
+  },
+  "dependencies": {
+    "@codesandbox/nodebox": "^0.1.9",
+    "fflate": "^0.8.2",
+    "just-bash": "^2.14.0"
+  }
+}

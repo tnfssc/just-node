@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #090b09;
+  --ink: #d7ded4;
+  --ink-bright: #f3f5ef;
+  --muted: #899487;
+  --muted-soft: #697363;
+  --line-soft: rgba(170, 187, 152, 0.12);
+  --line-strong: rgba(170, 187, 152, 0.18);
+  --accent: #9fb776;
+  --accent-strong: #c4d79d;
+  --success: #79c490;
+  --danger: #d78f7f;
+  --mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  --sans: "Avenir Next", "Helvetica Neue", "Segoe UI", sans-serif;
+
+  color: var(--ink);
+  font: 16px/1.5 var(--sans);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html,
+  body,
+  #root {
+    min-height: 100%;
+  }
+
+  html,
+  body,
+  #root,
+  body * {
+    scrollbar-color: rgba(170, 187, 152, 0.32) transparent;
+  }
+
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background: var(--bg);
+    color: var(--ink);
+  }
+
+  button,
+  input {
+    font: inherit;
+  }
+
+  button {
+    cursor: pointer;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  ::selection {
+    background: rgba(159, 183, 118, 0.32);
+    color: var(--ink-bright);
+  }
+}
+
+.xterm {
+  height: 100%;
+}
+
+.xterm-viewport::-webkit-scrollbar,
+*::-webkit-scrollbar {
+  width: 0.55rem;
+  height: 0.55rem;
+}
+
+.xterm-viewport::-webkit-scrollbar-thumb,
+*::-webkit-scrollbar-thumb {
+  background: rgba(170, 187, 152, 0.22);
+}
+
+.xterm-viewport::-webkit-scrollbar-track,
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
